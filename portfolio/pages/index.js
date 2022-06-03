@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Entry from "../conpoments/Entry";
-import styles from "../styles/Home.module.css";
+import Header from "../conpoments/Header";
+import Introduction from "../conpoments/Introduction";
+import About from "../conpoments/About";
+import Service from "../conpoments/Service";
+import Footer from "../conpoments/Footer";
 
 export default function Home(props) {
   console.log(props.entries);
@@ -12,21 +16,23 @@ export default function Home(props) {
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <h1>Portfolio</h1>
-      </header>
+
+      <Header />
 
       <main>
+        <Introduction />
+
+        <About />
+
+        <Service />
+
+        {/* 所得した記事ぶん回してEnptyコンポーネント表示する */}
         {props.entries.contents.map((entry) => {
-          return <Entry entry={entry}></Entry>;
+          return <Entry key={entry.id} entry={entry}></Entry>;
         })}
       </main>
 
-      <footer>
-        <p>
-          <small>&copy; ogata</small>
-        </p>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }
