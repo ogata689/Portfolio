@@ -1,20 +1,30 @@
+import { Link, animateScroll as scroll } from "react-scroll";
 import Head from "next/head";
 import Image from "next/image";
 import Entry from "../conpoments/Entry";
 import Header from "../conpoments/Header";
 import Introduction from "../conpoments/Introduction";
 import About from "../conpoments/About";
-import Service from "../conpoments/Service";
+import Works from "../conpoments/Works";
+import Profile from "../conpoments/Profile";
+import Contact from "../conpoments/Contact";
+import GoTop from "../conpoments/GoTop";
 import Footer from "../conpoments/Footer";
 
 export default function Home(props) {
-  console.log(props.entries);
   return (
     <div>
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.icon" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300&family=Noto+Sans+JP:wght@100;300&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <Header />
@@ -24,15 +34,16 @@ export default function Home(props) {
 
         <About />
 
-        <Service />
+        <Works>{props.entries.contents}</Works>
 
-        {/* 所得した記事ぶん回してEnptyコンポーネント表示する */}
-        {props.entries.contents.map((entry) => {
-          return <Entry key={entry.id} entry={entry}></Entry>;
-        })}
+        <Profile />
+
+        <Contact />
       </main>
 
-      <Footer></Footer>
+      <GoTop />
+
+      <Footer />
     </div>
   );
 }
