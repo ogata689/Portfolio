@@ -20,7 +20,7 @@ export default function Home(props) {
         <link rel="icon" href="favicon.icon" />
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300&family=Noto+Sans+JP:wght@100;300&display=swap"
           rel="stylesheet"
