@@ -81,7 +81,7 @@ export default function Profile(props) {
           <h3>勉強したこと</h3>
           <p>
             HTML、css、php、Java
-            Script等の基礎言語は一通り勉強し、JQueriやWordpress、Next.jsはある程度活用できるようになりました。デザイン方面では、AdobeのPhotoshopやIllustrator、XDやAfterEfectを津会うことができ、それらを活用してWebデザインやバナー、ポスターのデザインなんかにも取り組みました。
+            Script等の基礎言語は一通り勉強し、JQueryやWordpress、Next.jsはある程度活用できるようになりました。デザイン方面では、AdobeのPhotoshopやIllustrator、XDやAfterEfectを使用することができ、それらを活用してWebデザインやバナー、ポスターのデザインなんかにも取り組みました。
           </p>
         </ProfileContants>
       </Status>
