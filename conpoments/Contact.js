@@ -8,7 +8,7 @@ const ContactContainer = style.section`
 const ContactTitle = style.h2`
   font-size: 48px;
   color: #fff;
-  background-color: #516494;
+  background-color: #fe0000;
   width: 120px;
   height: 120px;
   margin: 0 auto;
@@ -17,12 +17,14 @@ const ContactTitle = style.h2`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 12px solid #d00000;
+
   flex-direction: column;
-  text-shadow: 0 0 4px rgba(51,64,94,0.4)
+  text-shadow: 0 0 4px rgba(0,0,0,1)
 `;
 const ContactTitleJp = style.span`
   display: block;
-  font-size: 10px;
+  font-size: 9px;
 `;
 const ContactItems = style.section`
 font-family: "Noto Sans JP", sans-serif;
@@ -44,11 +46,12 @@ text-aline: right;
 margin-right: 0;
   & span {
     display: block;
+    padding: 8px 0;
   }
 `;
 const Line = style.div`
   width: 4px;
-  background: #516494;
+  background: #000;
   border-radius: 2px;
 `;
 const Required = style.span`
@@ -74,14 +77,14 @@ const InputBox = style.div`
 `;
 const Submit = style.div`
   & button {
-    color: #516494;
+    color: #000;
     padding: 8px 24px;
     border-radius: 8px;
-    border: 2px solid #516494;
+    border: 2px solid #000;
     transition: all 0.3s ease-in;
   }
   & button:hover {
-    background: rgb(81, 100, 148,0.8);
+    background: rgb(255, 0, 0,0.8);
     color: #fff;
   }
 `;

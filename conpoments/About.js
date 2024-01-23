@@ -5,17 +5,23 @@ const AboutContainer = style.section`
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 100px 50px;
+  padding: 200px 50px 200px 50px;
+  background: url(/images/about_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+
   & figure {
-    max-width: 300px;
+    max-width: 500px;
     margin-right: 50px;
   }
 
   & img {
     max-width: 100%;
   }
+
+
 `;
 const AboutTitle = style.h2`
   max-width: 300px;
@@ -41,7 +47,7 @@ export default function About(props) {
         </AboutText>
       </div>
       <figure>
-        <img src="/images/about-img.png" />
+        <img src="/images/about_img.png" />
       </figure>
     </AboutContainer>
   );

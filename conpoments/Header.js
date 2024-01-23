@@ -2,20 +2,34 @@ import style from "styled-components";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const HeaderContainer = style.header`
-  color: #fff;
-  text-shadow: 1.5px 1.5px 0 #516494;
-  max-width: 1200px;
-  margin: 40px;
+  color:#fef9e9;
+  font-size: 18px;
+  width: 100%;
+  height: 130px;
+  background: url(/images/nav_bg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   position: fixed;
   right: 0;
+  top: 0;
   z-index: 1;
 `;
 
 const NavigationContainer = style.ul`
-  width: 400px;
+  position: fixed;
+  transform: rotate(3deg);
+  right: 3vw;
+  top: 3vw;
   display: flex;
-  justify-content: space-between;
   cursor: pointer;
+  justify-content: space-between;
+
+   & li{
+    width: 100px;
+    text-align: center;
+    margin: 0 20px;
+    border-bottom: 3px solid #fef9e9;
+   }
 `;
 
 export default function Header(props) {

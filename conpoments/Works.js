@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Work = style.section`
-background:url(../images/work-bg.jpg);
+background:url(../images/work_bg.png);
 background-size: 100% 100%;
 width: 100%;
 padding: 160px 50px;

@@ -3,11 +3,11 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const LinkContainer = style.section`
 position: fixed;
-right: 3vw;
-bottom: 40px;
+right: 0;
+bottom: 0;
 
 & img {
-  height: 40vh;
+  height: 20vh;
   cursor: pointer;
 }
 `;

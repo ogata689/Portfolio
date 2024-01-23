@@ -4,9 +4,14 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const FooterContainer = style.footer`
   color: #fff;
   height: 325px;
-  background: url(images/foot-bg.png);
-  background-size: 100% 100%;
-  padding-top: 100px;
+  background-color: #000;
+   & div {
+    padding-top: 70px;
+    background: url(images/foot_bg.png);
+    background-size: 101%;
+    background-position: 0 -2px;
+    background-repeat: no-repeat;
+   }
 `;
 
 const Copy = style.p`
@@ -53,74 +58,76 @@ width: 400px;
 export default function Footer(props) {
   return (
     <FooterContainer>
-      <Footeritems>
-        <SiteLogos>
-          <h2>
-            PORTFOLIO for<Ent>OGATA NAO</Ent>
-          </h2>
-          <figure>
-            <img src="images/logo.png" />
-          </figure>
-        </SiteLogos>
-        <SiteMaps>
-          <h2>SITE MAP</h2>
-          <gnav>
-            <ul>
-              <Link
-                activeClass="active"
-                to="introduction"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <li>HOME</li>
-              </Link>
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <li>ABOUT</li>
-              </Link>
-              <Link
-                activeClass="active"
-                to="works"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <li>WORKs</li>
-              </Link>
-              <Link
-                activeClass="active"
-                to="profile"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <li>PROFILE</li>
-              </Link>
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <li>CONTACT</li>
-              </Link>
-            </ul>
-          </gnav>
-        </SiteMaps>
-      </Footeritems>
-      <Copy>&copy; ogata</Copy>
+      <div>
+        <Footeritems>
+          <SiteLogos>
+            <h2>
+              PORTFOLIO for<Ent>OGATA NAO</Ent>
+            </h2>
+            <figure>
+              <img src="images/logo.png" />
+            </figure>
+          </SiteLogos>
+          <SiteMaps>
+            <h2>SITE MAP</h2>
+            <gnav>
+              <ul>
+                <Link
+                  activeClass="active"
+                  to="introduction"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <li>HOME</li>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <li>ABOUT</li>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="works"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <li>WORKs</li>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="profile"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <li>PROFILE</li>
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <li>CONTACT</li>
+                </Link>
+              </ul>
+            </gnav>
+          </SiteMaps>
+        </Footeritems>
+        <Copy>&copy; ogata</Copy>
+      </div>
     </FooterContainer>
   );
 }
